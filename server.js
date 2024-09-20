@@ -13,7 +13,7 @@ connectDb()
 // app.use("/api/users")
 
 // app.get("/api", (req, res) => res.send("I am at api"))
-// app.get("/", (req, res) => res.send("I am at the root"))
+app.get("/", (req, res) => res.send("I am at the root"))
 
 app.post("/", (req, res) =>{
 
