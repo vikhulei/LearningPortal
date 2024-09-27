@@ -7,12 +7,6 @@ app.listen(PORT, () => console.log(`Listening on port ${PORT}`))
 
 app.use(express.json())
 
-app.use("/api/words", require('./routes/api/words'))
+app.use("/api/users", require('./routes/api/users'))
 
 connectDb()
-
-
-
-// app.post("/api", (req, res) =>{
-//     console.log(req.body.name)
-//     res.send("Got the name from api")
